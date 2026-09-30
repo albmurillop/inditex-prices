@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.inditex</groupId>
     <artifactId>prices</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
     <name>prices</name>
     <description>Pricing service: Inditex technical test</description>
 
