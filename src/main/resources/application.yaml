@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: prices
+  datasource:
+    url: jdbc:h2:mem:prices;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    url: /openapi.yaml
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health
+
+security:
+  public-endpoints:
+    - path: /prices
+      method: GET
+    - path: /swagger-ui/**
+    - path: /v3/api-docs/**
+    - path: /openapi.yaml
+    - path: /actuator/health
