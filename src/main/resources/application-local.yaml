@@ -1,0 +1,15 @@
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+security:
+  public-endpoints:
+    - path: /prices
+      method: GET
+    - path: /swagger-ui/**
+    - path: /v3/api-docs/**
+    - path: /openapi.yaml
+    - path: /actuator/health
+    - path: /h2-console/**
