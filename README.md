@@ -226,9 +226,9 @@ La imagen se construye en dos etapas (`eclipse-temurin:21-jdk` para compilar,
   sería invisible para quien opera el servicio en un despliegue real, así que sí se
   registra ahí (con la excepción completa, método y ruta de la petición), cubierto por
   `PriceControllerTest#returnsInternalServerErrorWithAGenericMessageOnAnUnexpectedFailure`.
-- **Versión `1.0.0`**: primera versión estable, publicada como release
-  (`v1.0.0`), que congela el contrato de API expuesto en `openapi.yaml`. A partir
-  de aquí `main` avanza en `1.0.1-SNAPSHOT` para desarrollo futuro.
+- **Versión `1.0.1-SNAPSHOT`**: tras la primera release estable (`v1.0.0`,
+  que congela el contrato de API expuesto en `openapi.yaml`), `main` avanza aquí
+  para el siguiente desarrollo.
 - **Configuración por perfil en ficheros separados**: `application.yaml` (común) +
   `application-local.yaml` (solo con el perfil `local`), en vez de un único fichero con
   varios documentos YAML separados por `---` y `spring.config.activate.on-profile`. Es la
